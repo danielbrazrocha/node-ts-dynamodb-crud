@@ -1,0 +1,39 @@
+{
+  "name": "node-ts-dynamodb-crud",
+  "version": "1.0.0",
+  "description": "A simple demonstration of performing CRUD operations on DynamoDB using Node.js, TypeScript, and AWS SDK v3.",
+  "author": "Daniel Rocha",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx tsx app.ts",
+    "lint": "eslint src --ext .ts --fix",
+    "create-table": "npx tsx ./src/dynamodb/v3/createTable.ts",
+    "delete-table": "npx tsx ./src/dynamodb/v3/deleteTable.ts",
+    "put-item": "npx tsx ./src/dynamodb/v3/putItem.ts",
+    "get-item": "npx tsx ./src/dynamodb/v3/getItem.ts",
+    "get-item-by-pk": "npx tsx ./src/dynamodb/v3/queryItemByPK.ts",
+    "get-all-items": "npx tsx ./src/dynamodb/v3/scanAllItems.ts",
+    "update-item": "npx tsx ./src/dynamodb/v3/updateItem.ts",
+    "delete-item": "npx tsx ./src/dynamodb/v3/deleteItem.ts",
+    "seed": "cd ./src/dynamodb/v3 && npx tsx seedDatabase.ts && cd ../../..",
+    "dynamodb-admin": "dynamodb-admin"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.345.0",
+    "@aws-sdk/util-dynamodb": "^3.345.0",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.2.5",
+    "eslint": "^8.42.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.3"
+  }
+}

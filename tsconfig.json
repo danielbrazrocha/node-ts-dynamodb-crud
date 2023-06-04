@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "paths": {
+      "@app/*": [
+        "*"
+      ],
+      "@test/*": [
+        "../test/*.ts",
+        "../test/*.json",
+      ],
+    },
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "target": "ES2019",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    
+  },
+  "lib": ["es2020"]
+}

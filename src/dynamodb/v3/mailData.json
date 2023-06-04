@@ -1,0 +1,42 @@
+[
+    {
+        "PK": "INSPECTED#US123456789CE",
+        "SK" : "2023-04-05",
+        "Product" : "Eletronics",
+        "Decision" : "Approve",
+        "Inspector" : {
+            "id": "1",
+            "Name": "Jhon Arias"
+        }
+    },
+    {
+        "PK": "INSPECTED#PT123456789CE",
+        "SK" : "2023-04-06",
+        "Product" : "Fertilizer",
+        "Decision" : "Deny",
+        "Inspector" : {
+            "id": "2",
+            "Name": "German Cano"
+        }
+    },
+    {
+        "PK": "INSPECTED#DE123456789CE",
+        "SK" : "2023-04-07",
+        "Product" : "Chocolate",
+        "Decision" : "Approve",
+        "Inspector" : {
+            "id": "2",
+            "Name": "German Cano"
+        }
+    },
+    {
+        "PK": "INSPECTED#UK123456789CE",
+        "SK" : "2023-04-08",
+        "Product" : "Seeds",
+        "Decision" : "Deny",
+        "Inspector" : {
+            "id": "2",
+            "Name": "German Cano"
+        }
+    }
+  ]
